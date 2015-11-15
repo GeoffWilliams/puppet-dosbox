@@ -45,10 +45,11 @@ Install dosbox with the default settings.  The class is parameterised to allow c
 ## Usage
 ```puppet
 class { "dosbox":
-  fullscreen => true,
-  scaler     => "advinterp3x",
-  output     => "opengl",
-  aspect     => true,
+  fullscreen      => true,
+  scaler          => "advinterp3x",
+  output          => "opengl",
+  aspect          => true,
+  fullresolution  => "1920x1080",
 }
 ```
 Override the config file defaults to give a nicer scaler and use OpenGL
