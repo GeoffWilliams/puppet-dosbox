@@ -55,7 +55,7 @@ class dosbox(
   # do not allow changing ensure to delete the virtual drive
   if $ensure == present {
     file { $virtual_drive:
-      ensure => present,
+      ensure => directory,
       owner  => $owner,
       group  => $group,
       mode   => $mode,
