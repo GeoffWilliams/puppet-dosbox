@@ -1,2 +1,2 @@
 #!/bin/bash
-dosbox -conf /etc/dosbox.conf "$@"
+/usr/bin/dosbox -conf /etc/dosbox.conf "$@"

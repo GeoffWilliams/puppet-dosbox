@@ -20,13 +20,18 @@
 # [*fullscreen*]
 #   start in fullscreen mode
 class dosbox(
-    $ensure         = present,
-    $package        = $dosbox::params::package,
-    $virtual_drive  = $dosbox::params::virtual_drive,
-    $user           = $dosbox::params::user,
-    $group          = $dosbox::params::group,
-    $mode           = $dosbox::params::mode,
-    $fullscreen     = true,
+    $ensure           = present,
+    $package          = $dosbox::params::package,
+    $virtual_drive    = $dosbox::params::virtual_drive,
+    $user             = $dosbox::params::user,
+    $group            = $dosbox::params::group,
+    $mode             = $dosbox::params::mode,
+    $fullscreen       = $dosbox::params::fullscreen,
+    $fullresolution   = $dosbox::params::fulresolution,
+    $windowresolution = $dosbox::params::windowresolution,
+    $output           = $dosbox::params::output,
+    $scaler           = $dosbox::params::scaler,
+    $aspect           = $dosbox::params::aspect,
 ) inherits dosbox::params {
 
   package { $package:
@@ -38,7 +43,7 @@ class dosbox(
   }
 
   # do not allow changing ensure to delete the virtual drive
-  if $virtual == present {
+  if $virtual_drive == present {
     file { $virtual_drive:
       ensure => present,
       owner  => $owner,
