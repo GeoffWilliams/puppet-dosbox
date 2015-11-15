@@ -42,7 +42,7 @@ include dosbox
 
 Install dosbox with the default settings.  The class is parameterised to allow customisation.  See source code for details.
 
-# Usage
+## Usage
 ```puppet
 class { "dosbox":
   fullscreen => true,
