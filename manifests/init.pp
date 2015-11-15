@@ -37,7 +37,7 @@ class dosbox(
     $group            = $dosbox::params::group,
     $mode             = $dosbox::params::mode,
     $fullscreen       = $dosbox::params::fullscreen,
-    $fullresolution   = $dosbox::params::fulresolution,
+    $fullresolution   = $dosbox::params::fullresolution,
     $windowresolution = $dosbox::params::windowresolution,
     $output           = $dosbox::params::output,
     $scaler           = $dosbox::params::scaler,
