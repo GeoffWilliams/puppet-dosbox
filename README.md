@@ -42,6 +42,16 @@ include dosbox
 
 Install dosbox with the default settings.  The class is parameterised to allow customisation.  See source code for details.
 
+# Usage
+```puppet
+class { "dosbox":
+  fullscreen => true,
+  scaler     => "advinterp3x",
+  output     => "opengl",
+  aspect     => true,
+}
+```
+Override the config file defaults to give a nicer scaler and use OpenGL
 
 ## Reference
 * `dosbox` - configure dosbox
