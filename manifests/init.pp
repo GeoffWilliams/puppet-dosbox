@@ -19,6 +19,16 @@
 #   directory mode for the dos virtual drive
 # [*fullscreen*]
 #   start in fullscreen mode
+# [*fullresolution*]
+#   resolution to use in fullscreen mode
+# [*windowresolution*]
+#   resolution to use in windowed mode
+# [*output*]
+#   video output technology
+# [*scaler*]
+#   how to scale video output
+# [*aspect*]
+#   preserve aspect ratio
 class dosbox(
     $ensure           = present,
     $package          = $dosbox::params::package,
