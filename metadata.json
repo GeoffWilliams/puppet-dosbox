@@ -1,0 +1,14 @@
+{
+  "name": "geoffwilliams-dosbox",
+  "version": "0.1.0",
+  "author": "geoffwilliams",
+  "summary": "configure dosbox",
+  "license": "Apache-2.0",
+  "source": "https://github.com/GeoffWilliams/puppet-dosbox",
+  "project_page": "https://github.com/GeoffWilliams/puppet-dosbox",
+  "issues_url": "https://github.com/GeoffWilliams/puppet-dosbox/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 4.9.0"}
+  ]
+}
+
